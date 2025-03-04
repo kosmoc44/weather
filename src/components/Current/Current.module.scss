@@ -1,0 +1,122 @@
+.current {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1245px) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__left {
+        box-shadow: 2px 5px 25px -3px #B4B4B440;
+        background: var(--bg);
+        max-width: 400px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px 20px 20px 18px;
+        position: relative;
+
+        @media (max-width: 1245px) {
+            max-width: 100%;
+        }
+
+
+        &_degree {
+            font-weight: 500;
+            font-size: 96px;
+            line-height: 117.02px;
+            color: #4793FF;
+        }
+
+        &_today {
+            font-size: 40px;
+            line-height: 48.76px;
+            color: var(--txt);
+            margin-bottom: 31px;
+        }
+
+        &_time {
+            font-size: 25px;
+            line-height: 30.48px;
+            color: #939CB0;
+            margin-bottom: 14px;
+        }
+
+        &_city {
+            font-size: 25px;
+            line-height: 30.48px;
+            color: #939CB0;
+        }
+
+        &_sun {
+            position: absolute;
+            top: 46px;
+            right: 20px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: 2px 5px 25px -3px #B4B4B440;
+        border-radius: 20px;
+        background-color: var(--bg);
+        padding: 42px 30px;
+        position: relative;
+
+
+
+        &_img {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+
+        &_item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            &_img {
+                border-radius: 50%;
+                box-shadow: 1px 4px 10px -1px #4793FF33;
+                background-color: var(--bg);
+                padding: 7px 6px 6px 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            &_txt {
+                font-size: 14px;
+                line-height: 17.07px;
+                color: #939CB0;
+                min-width: 100px;
+            }
+
+            &_num {
+                font-size: 16px;
+                line-height: 17.07px;
+                color: var(--txt);
+            }
+        }
+
+        @media (max-width: 1245px) {
+            max-width: 100%;
+            overflow: hidden;
+
+        }
+
+        @media (max-width: 410px) {
+            padding: 5px;
+
+        }
+
+    }
+}
