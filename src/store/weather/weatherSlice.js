@@ -12,7 +12,7 @@ export const getLatLon = createAsyncThunk(
     let { key } = getState().weather;
 
     const res = await axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${key}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${key}`
     );
     dispatch(getWeather(res.data[0]));
   }
